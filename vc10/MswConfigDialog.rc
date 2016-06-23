@@ -1,0 +1,91 @@
+#include "..\include\MswConfigDialog.h"
+#include "..\include\MswVersion.h"
+#include "..\include\Resources.h"
+
+#include <Windows.h>
+#include <commctrl.h>
+#include <ScrnSave.h>
+
+STRINGTABLE {
+	IDS_DESCRIPTION				VER_FILEDESCRIPTION_STR
+	IDS_REQUESTFAIL_CAPTION		"Request Failed"
+	IDS_REQUESTFAIL_MESSAGE		"Sorry, could not reach the Instagram service.\n\nPlease check your connection and try again."
+	IDS_INSTAUTHFAIL_CAPTION	"Login Failed"
+	IDS_INSTAUTHFAIL_DEFAULT	"Sorry, authenticating with Instagram failed.\n\nPlease ensure your username and password are correct."
+	IDS_UPDATECHECKFAIL_CAPTION	"Request Failed"
+	IDS_UPDATECHECKFAIL_MESSAGE	"Sorry, could not reach the update server.\n\nPlease check your connection and try again."
+	IDS_UPDATECHECKVERSION		VER_UPDATECHECK_STR
+	IDS_UPDATECHECKDEFAULT		"Version %s"
+	IDS_UPDATECHECKACTION		"Checking..."
+	IDS_UPDATEAVAILABLE			"A new version of Screenstagram is available! Click here to download."
+	IDS_UPDATEUNNECESSARY		"You are using the latest version of Screenstagram."
+	IDS_INSTAUTHGOOD_CAPTION	"Login Succeeded"
+	IDS_INSTAUTHGOOD_MESSAGE	"Screenstagram is now authenticated with Instagram!"
+	IDS_INSTAUTHREMOVE_CAPTION	"Deauthenticate Succeeded"
+	IDS_INSTAUTHREMOVE_MESSAGE	"Screenstagram is no longer authenticated with Instagram."
+/*
+	IDS_FOURSQIDD_CLEARSTATE	"Clear"
+	IDS_FOURSQIDD_OKSTATE		"Save"
+	IDS_FOURSQDIALOGTXT			"\
+		Foursquare users may enter a venue ID in the box below to receive visual notifications within Screenstagram whenever patrons check into the specified venue.\r\n\r\n\
+		To find an eligible venue ID, visit foursquare.com and search for the desired venue. Click through to the venue detail page and observe the venue page URL. The venue ID is the long string of alpha-numeric characters forming the last part of the URL. Be sure to exclude any leading or trailing slashes.\r\n\r\n\
+		e.g., The Barbarian Group NYC is\r\n\
+		" // continued; {venue ID link} @see IDC_SAMPLEVENUE
+*/
+}
+
+RES_LOGO_PNG RCDATA	"..\\resources\\msw-logo.png"
+RES_FOURSQ_PNG RCDATA "..\\resources\\foursquareLogo-16.png"
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 340, 419
+STYLE DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION VER_PRODUCTNAME_STR
+FONT 8, "Ms Shell Dlg", 400, 0, 1
+BEGIN
+    EDITTEXT        IDC_USERNAME, 22, 102, 140, 14, ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD, 22, 137, 140, 14, ES_AUTOHSCROLL | ES_PASSWORD
+    PUSHBUTTON      "Login with Instagram", IDC_LOGIN, 22, 162, 140, 14
+    PUSHBUTTON      "Deauthenticate", IDC_DEAUTHENTICATE, 22, 217, 140, 14, WS_DISABLED
+    AUTOCHECKBOX    "Show user names", IDC_SHOWUSERNAMES, 22, 277, 77, 8
+	EDITTEXT        IDC_TAGS, 37, 352, 130, 14, ES_AUTOHSCROLL | WS_DISABLED
+	DEFPUSHBUTTON   "OK", IDOK, 217, 392, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 277, 392, 50, 14
+	CONTROL         "", IDC_LOGO, WC_STATIC, SS_OWNERDRAW | SS_REALSIZEIMAGE, 7, 7, 325, 50
+    GROUPBOX        "  Instagram Account  ", IDC_STATIC, 7, 70, 175, 175
+    CONTROL         "Instagram Username", IDC_USERNAMEINFO, WC_STATIC, NOT WS_GROUP, 22, 92, 140, 8, WS_EX_TRANSPARENT
+    LTEXT           "This screen saver will never save your password. Instead we'll use it right now to authenticate with Instagram, then we'll throw it away. This lets us access your feed and photos for display, but its totally optional.", IDC_STATIC, 200, 92, 122, 65, SS_LEFT | WS_EX_TRANSPARENT
+    CONTROL         "Instagram Password", IDC_PASSWORDINFO, WC_STATIC, NOT WS_GROUP, 22, 127, 140, 8, WS_EX_TRANSPARENT
+    LTEXT           "This product uses the Instagram API but is not endorsed or certified by Instagram.", IDC_INSTADISCLAIMER, 200, 162, 122, 40, SS_LEFT | WS_EX_TRANSPARENT
+    LTEXT           "Don't want us to load your photos here anymore? Deauthenticate, and we'll stop.", IDC_DEAUTHENTICATEINFO, 22, 192, 142, 20, SS_LEFT | WS_EX_TRANSPARENT | WS_DISABLED
+    CONTROL         VER_LEGALCOPYRIGHT_STR, IDC_COPYRIGHT, WC_STATIC, NOT WS_GROUP | SS_SIMPLE, 200, 212, 112, 8, WS_EX_TRANSPARENT
+    CONTROL         "http://www.barbariangroup.com", IDC_URL, WC_STATIC, NOT WS_GROUP | SS_SIMPLE | SS_NOTIFY, 201, 222, 122, 8, WS_EX_TRANSPARENT
+    GROUPBOX        "  Options  ", IDC_STATIC, 7, 255, 326, 125
+    LTEXT           "e.g.  cat, dog, redsoxnation", IDC_INCLUDETAGGEDINFO, 177, 355, 100, 8, SS_LEFT | WS_EX_TRANSPARENT | WS_DISABLED
+    CONTROL         IDS_UPDATECHECKDEFAULT, IDC_CURRENTVERSION, WC_STATIC, NOT WS_GROUP | SS_RIGHT, 200, 47, 122, 8, WS_EX_TRANSPARENT
+    CONTROL         "Check for Update", IDC_CHECKFORUPDATE, WC_STATIC, SS_RIGHT | SS_NOTIFY, 15, 57, 307, 8, WS_EX_TRANSPARENT
+/*
+    CONTROL         "", IDC_FOURSQLOGO, WC_STATIC, SS_OWNERDRAW | SS_REALSIZEIMAGE | SS_NOTIFY, 7, 392, 16, 16
+*/
+    AUTORADIOBUTTON "Show my feed when I am logged in, else show popular images", IDC_DEFAULTBEHAVIOR, 22, 297, 211, 8, WS_TABSTOP
+    AUTORADIOBUTTON "Only show images I have liked (requires login)", IDC_ONLYSHOWLIKED, 22, 317, 159, 8, WS_TABSTOP
+    AUTORADIOBUTTON "Only show photos with the following comma-delimited tags (requires login)", IDC_ONLYINCLUDETAGGED, 22, 337, 250, 8, WS_TABSTOP
+END
+
+/*
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+IDD_FOURSQCONFIGURE DIALOGEX 0, 0, 186, 219
+STYLE DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP
+CAPTION "Foursquare Options"
+FONT 8, "Ms Shell Dlg", 400, 0, 1
+BEGIN
+    DEFPUSHBUTTON   "Save", IDOK, 69, 198, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 129, 198, 50, 14
+    EDITTEXT        IDC_FOURSQVENUE, 22, 172, 145, 14, ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOURSQDIALOGTXT, 22, 17, 145, 120, NOT WS_BORDER | NOT WS_TABSTOP | ES_MULTILINE | ES_NOHIDESEL | ES_READONLY, WS_EX_TRANSPARENT
+    LTEXT           "Venue ID", IDC_STATIC, 22, 162, 145, 8, SS_LEFT
+    CTEXT           "49d164f1f964a5207c5b1fe3", IDC_SAMPLEVENUE, 22, 142, 145, 8, SS_CENTER | SS_NOTIFY, WS_EX_TRANSPARENT
+END
+*/
+
+// this line needs to end in a carriage return

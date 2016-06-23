@@ -1,0 +1,6 @@
+#include "..\include\Resources.h"
+
+RES_LOADER_PNG
+RES_PREVIEW_JPG
+
+// this line needs to end in a carriage return

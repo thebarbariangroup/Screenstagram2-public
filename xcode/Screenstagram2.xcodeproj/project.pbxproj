@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000B226A161F64170040DD3B /* Back.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B225B161F64170040DD3B /* Back.cpp */; };
+		000B226B161F64170040DD3B /* BarOverlayView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B225C161F64170040DD3B /* BarOverlayView.cpp */; };
+		000B226E161F64170040DD3B /* ClassicRenderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B225F161F64170040DD3B /* ClassicRenderView.cpp */; };
+		000B226F161F64170040DD3B /* FlashView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2260161F64170040DD3B /* FlashView.cpp */; };
+		000B2270161F64170040DD3B /* InstagramImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2261161F64170040DD3B /* InstagramImage.cpp */; };
+		000B2271161F64170040DD3B /* InstagramImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2262161F64170040DD3B /* InstagramImageManager.cpp */; };
+		000B2272161F64170040DD3B /* LoaderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2263161F64170040DD3B /* LoaderView.cpp */; };
+		000B2273161F64170040DD3B /* MacConfigDialog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000B2264161F64170040DD3B /* MacConfigDialog.mm */; };
+		000B2274161F64170040DD3B /* PhotoFlashRenderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2265161F64170040DD3B /* PhotoFlashRenderView.cpp */; };
+		000B2275161F64170040DD3B /* RenderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2266161F64170040DD3B /* RenderView.cpp */; };
+		000B2276161F64170040DD3B /* SwappableImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2267161F64170040DD3B /* SwappableImage.cpp */; };
+		000B2277161F64170040DD3B /* TileTakeoverRenderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000B2268161F64170040DD3B /* TileTakeoverRenderView.cpp */; };
+		000B229B161F64990040DD3B /* compositeShadowCenter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B2289161F64990040DD3B /* compositeShadowCenter.gif */; };
+		000B229C161F64990040DD3B /* compositeShadowHorizontal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B228A161F64990040DD3B /* compositeShadowHorizontal.gif */; };
+		000B229D161F64990040DD3B /* compositeShadowVertical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B228B161F64990040DD3B /* compositeShadowVertical.gif */; };
+		000B229E161F64990040DD3B /* dropshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B228C161F64990040DD3B /* dropshadow.png */; };
+		000B229F161F64990040DD3B /* foursquareAvatarMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B228D161F64990040DD3B /* foursquareAvatarMask.png */; };
+		000B22A0161F64990040DD3B /* foursquareLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B228E161F64990040DD3B /* foursquareLogo.png */; };
+		000B22A1161F64990040DD3B /* foursquareLogoShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B228F161F64990040DD3B /* foursquareLogoShadow.png */; };
+		000B22A2161F64990040DD3B /* loader.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2290161F64990040DD3B /* loader.png */; };
+		000B22A3161F64990040DD3B /* preview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 000B2291161F64990040DD3B /* preview.jpg */; };
+		000B22A4161F64990040DD3B /* screenstagram_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2292161F64990040DD3B /* screenstagram_bg.png */; };
+		000B22A5161F64990040DD3B /* screenstagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2293161F64990040DD3B /* screenstagram.png */; };
+		000B22A6161F64990040DD3B /* shadowBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2294161F64990040DD3B /* shadowBackground.png */; };
+		000B22A7161F64990040DD3B /* shadowCenter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B2295161F64990040DD3B /* shadowCenter.gif */; };
+		000B22A8161F64990040DD3B /* shadowCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2296161F64990040DD3B /* shadowCenter.png */; };
+		000B22A9161F64990040DD3B /* shadowHorizontal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B2297161F64990040DD3B /* shadowHorizontal.gif */; };
+		000B22AA161F64990040DD3B /* shadowHorizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B2298161F64990040DD3B /* shadowHorizontal.png */; };
+		000B22AB161F64990040DD3B /* shadowVertical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 000B2299161F64990040DD3B /* shadowVertical.gif */; };
+		000B22AC161F64990040DD3B /* shadowVertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 000B229A161F64990040DD3B /* shadowVertical.png */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		015732FE1702370D00DD767E /* SettingsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015732FD1702370D00DD767E /* SettingsSheet.xib */; };
+		01F33D02170236C10057123D /* screenstagram-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F33D01170236C10057123D /* screenstagram-copy.png */; };
+		07D4D0D6F07F44C3AA35FBE7 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B91624A8824DECA7F6C91F /* ScreenSaver.framework */; };
+		0FC44C24DF434F4FB112D32F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAA82C7F82A40899BB9EBC3 /* CoreLocation.framework */; };
+		11200BF716EE91D6004E2D66 /* UrlImplCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11200BF616EE91D6004E2D66 /* UrlImplCocoa.mm */; };
+		11200BFC16EE91FA004E2D66 /* AppImplCocoaRendererGl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11200BF816EE91FA004E2D66 /* AppImplCocoaRendererGl.mm */; };
+		11200BFD16EE91FA004E2D66 /* AppImplCocoaScreenSaver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11200BF916EE91FA004E2D66 /* AppImplCocoaScreenSaver.mm */; };
+		11200BFE16EE91FA004E2D66 /* AppScreenSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11200BFA16EE91FA004E2D66 /* AppScreenSaver.cpp */; };
+		11200BFF16EE91FA004E2D66 /* CinderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11200BFB16EE91FA004E2D66 /* CinderView.mm */; };
+		610A524A16221A0A00683C60 /* Screenstagram 2.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* Screenstagram 2.saver */; };
+		619864F5161B6D8800936112 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619864F4161B6D8800936112 /* QTKit.framework */; };
+		619864F7161B6D9200936112 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619864F6161B6D9200936112 /* CoreVideo.framework */; };
+		61A3BAA11656E354000DF50F /* InstagramImageFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A3BAA01656E354000DF50F /* InstagramImageFace.cpp */; };
+		61A3BAA41656E35D000DF50F /* WindowData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A3BAA31656E35D000DF50F /* WindowData.cpp */; };
+		61E8F5821698C3AE00D553F2 /* screenstagram.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 61E8F5811698C3AE00D553F2 /* screenstagram.iconset */; };
+		61E8F5851698C44600D553F2 /* screenstagram.icns in Resources */ = {isa = PBXBuildFile; fileRef = 61E8F5841698C44600D553F2 /* screenstagram.icns */; };
+		61E8F5881698C82800D553F2 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E8F5861698C82800D553F2 /* thumbnail.png */; };
+		61E8F5891698C82800D553F2 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E8F5871698C82800D553F2 /* thumbnail@2x.png */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C1023CF418FB4770BBD1DECA /* Screenstagram2App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571C98FF9C2941EFBC235097 /* Screenstagram2App.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		610A52441622198900683C60 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$HOME/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				610A524A16221A0A00683C60 /* Screenstagram 2.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000B225B161F64170040DD3B /* Back.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Back.cpp; path = ../src/Back.cpp; sourceTree = "<group>"; };
+		000B225C161F64170040DD3B /* BarOverlayView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BarOverlayView.cpp; path = ../src/BarOverlayView.cpp; sourceTree = "<group>"; };
+		000B225F161F64170040DD3B /* ClassicRenderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ClassicRenderView.cpp; path = ../src/ClassicRenderView.cpp; sourceTree = "<group>"; };
+		000B2260161F64170040DD3B /* FlashView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FlashView.cpp; path = ../src/FlashView.cpp; sourceTree = "<group>"; };
+		000B2261161F64170040DD3B /* InstagramImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InstagramImage.cpp; path = ../src/InstagramImage.cpp; sourceTree = "<group>"; };
+		000B2262161F64170040DD3B /* InstagramImageManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InstagramImageManager.cpp; path = ../src/InstagramImageManager.cpp; sourceTree = "<group>"; };
+		000B2263161F64170040DD3B /* LoaderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoaderView.cpp; path = ../src/LoaderView.cpp; sourceTree = "<group>"; };
+		000B2264161F64170040DD3B /* MacConfigDialog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MacConfigDialog.mm; path = ../src/MacConfigDialog.mm; sourceTree = "<group>"; };
+		000B2265161F64170040DD3B /* PhotoFlashRenderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhotoFlashRenderView.cpp; path = ../src/PhotoFlashRenderView.cpp; sourceTree = "<group>"; };
+		000B2266161F64170040DD3B /* RenderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderView.cpp; path = ../src/RenderView.cpp; sourceTree = "<group>"; };
+		000B2267161F64170040DD3B /* SwappableImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SwappableImage.cpp; path = ../src/SwappableImage.cpp; sourceTree = "<group>"; };
+		000B2268161F64170040DD3B /* TileTakeoverRenderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TileTakeoverRenderView.cpp; path = ../src/TileTakeoverRenderView.cpp; sourceTree = "<group>"; };
+		000B2279161F645A0040DD3B /* Back.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Back.h; path = ../include/Back.h; sourceTree = "<group>"; };
+		000B227A161F645A0040DD3B /* BarOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarOverlayView.h; path = ../include/BarOverlayView.h; sourceTree = "<group>"; };
+		000B227D161F645A0040DD3B /* ClassicRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassicRenderView.h; path = ../include/ClassicRenderView.h; sourceTree = "<group>"; };
+		000B227E161F645A0040DD3B /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../include/Config.h; sourceTree = "<group>"; };
+		000B227F161F645A0040DD3B /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = ../include/Configuration.h; sourceTree = "<group>"; };
+		000B2280161F645A0040DD3B /* FlashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashView.h; path = ../include/FlashView.h; sourceTree = "<group>"; };
+		000B2281161F645A0040DD3B /* InstagramImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramImage.h; path = ../include/InstagramImage.h; sourceTree = "<group>"; };
+		000B2282161F645A0040DD3B /* InstagramImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramImageManager.h; path = ../include/InstagramImageManager.h; sourceTree = "<group>"; };
+		000B2283161F645A0040DD3B /* LoaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoaderView.h; path = ../include/LoaderView.h; sourceTree = "<group>"; };
+		000B2284161F645A0040DD3B /* MacConfigDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacConfigDialog.h; path = ../include/MacConfigDialog.h; sourceTree = "<group>"; };
+		000B2285161F645A0040DD3B /* PhotoFlashRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoFlashRenderView.h; path = ../include/PhotoFlashRenderView.h; sourceTree = "<group>"; };
+		000B2286161F645A0040DD3B /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderView.h; path = ../include/RenderView.h; sourceTree = "<group>"; };
+		000B2287161F645A0040DD3B /* SwappableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwappableImage.h; path = ../include/SwappableImage.h; sourceTree = "<group>"; };
+		000B2288161F645A0040DD3B /* TileTakeoverRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileTakeoverRenderView.h; path = ../include/TileTakeoverRenderView.h; sourceTree = "<group>"; };
+		000B2289161F64990040DD3B /* compositeShadowCenter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = compositeShadowCenter.gif; path = ../resources/compositeShadowCenter.gif; sourceTree = "<group>"; };
+		000B228A161F64990040DD3B /* compositeShadowHorizontal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = compositeShadowHorizontal.gif; path = ../resources/compositeShadowHorizontal.gif; sourceTree = "<group>"; };
+		000B228B161F64990040DD3B /* compositeShadowVertical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = compositeShadowVertical.gif; path = ../resources/compositeShadowVertical.gif; sourceTree = "<group>"; };
+		000B228C161F64990040DD3B /* dropshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropshadow.png; path = ../resources/dropshadow.png; sourceTree = "<group>"; };
+		000B228D161F64990040DD3B /* foursquareAvatarMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foursquareAvatarMask.png; path = ../resources/foursquareAvatarMask.png; sourceTree = "<group>"; };
+		000B228E161F64990040DD3B /* foursquareLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foursquareLogo.png; path = ../resources/foursquareLogo.png; sourceTree = "<group>"; };
+		000B228F161F64990040DD3B /* foursquareLogoShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foursquareLogoShadow.png; path = ../resources/foursquareLogoShadow.png; sourceTree = "<group>"; };
+		000B2290161F64990040DD3B /* loader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loader.png; path = ../resources/loader.png; sourceTree = "<group>"; };
+		000B2291161F64990040DD3B /* preview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = preview.jpg; path = ../resources/preview.jpg; sourceTree = "<group>"; };
+		000B2292161F64990040DD3B /* screenstagram_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenstagram_bg.png; path = ../resources/screenstagram_bg.png; sourceTree = "<group>"; };
+		000B2293161F64990040DD3B /* screenstagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenstagram.png; path = ../resources/screenstagram.png; sourceTree = "<group>"; };
+		000B2294161F64990040DD3B /* shadowBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowBackground.png; path = ../resources/shadowBackground.png; sourceTree = "<group>"; };
+		000B2295161F64990040DD3B /* shadowCenter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shadowCenter.gif; path = ../resources/shadowCenter.gif; sourceTree = "<group>"; };
+		000B2296161F64990040DD3B /* shadowCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowCenter.png; path = ../resources/shadowCenter.png; sourceTree = "<group>"; };
+		000B2297161F64990040DD3B /* shadowHorizontal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shadowHorizontal.gif; path = ../resources/shadowHorizontal.gif; sourceTree = "<group>"; };
+		000B2298161F64990040DD3B /* shadowHorizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowHorizontal.png; path = ../resources/shadowHorizontal.png; sourceTree = "<group>"; };
+		000B2299161F64990040DD3B /* shadowVertical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shadowVertical.gif; path = ../resources/shadowVertical.gif; sourceTree = "<group>"; };
+		000B229A161F64990040DD3B /* shadowVertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowVertical.png; path = ../resources/shadowVertical.png; sourceTree = "<group>"; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		015732FD1702370D00DD767E /* SettingsSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSheet.xib; sourceTree = "<group>"; };
+		01F33D01170236C10057123D /* screenstagram-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "screenstagram-copy.png"; path = "../resources/screenstagram-copy.png"; sourceTree = "<group>"; };
+		03B91624A8824DECA7F6C91F /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		11200BF616EE91D6004E2D66 /* UrlImplCocoa.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UrlImplCocoa.mm; path = ../cinder/src/cinder/UrlImplCocoa.mm; sourceTree = "<group>"; };
+		11200BF816EE91FA004E2D66 /* AppImplCocoaRendererGl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppImplCocoaRendererGl.mm; path = ../cinder/src/cinder/app/AppImplCocoaRendererGl.mm; sourceTree = "<group>"; };
+		11200BF916EE91FA004E2D66 /* AppImplCocoaScreenSaver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppImplCocoaScreenSaver.mm; path = ../cinder/src/cinder/app/AppImplCocoaScreenSaver.mm; sourceTree = "<group>"; };
+		11200BFA16EE91FA004E2D66 /* AppScreenSaver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = AppScreenSaver.cpp; path = ../cinder/src/cinder/app/AppScreenSaver.cpp; sourceTree = "<group>"; };
+		11200BFB16EE91FA004E2D66 /* CinderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CinderView.mm; path = ../cinder/src/cinder/app/CinderView.mm; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4EAA82C7F82A40899BB9EBC3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		571C98FF9C2941EFBC235097 /* Screenstagram2App.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = Screenstagram2App.cpp; path = ../src/Screenstagram2App.cpp; sourceTree = "<group>"; };
+		619864F4161B6D8800936112 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		619864F6161B6D9200936112 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		61A3BAA01656E354000DF50F /* InstagramImageFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InstagramImageFace.cpp; path = ../src/InstagramImageFace.cpp; sourceTree = "<group>"; };
+		61A3BAA31656E35D000DF50F /* WindowData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WindowData.cpp; path = ../src/WindowData.cpp; sourceTree = "<group>"; };
+		61A3BAA51656E36F000DF50F /* WindowData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindowData.h; path = ../include/WindowData.h; sourceTree = "<group>"; };
+		61A3BAA61656E376000DF50F /* InstagramImageFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramImageFace.h; path = ../include/InstagramImageFace.h; sourceTree = "<group>"; };
+		61E8F5811698C3AE00D553F2 /* screenstagram.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = screenstagram.iconset; sourceTree = "<group>"; };
+		61E8F5841698C44600D553F2 /* screenstagram.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = screenstagram.icns; sourceTree = "<group>"; };
+		61E8F5861698C82800D553F2 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		61E8F5871698C82800D553F2 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Screenstagram 2.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screenstagram 2.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC57C9820A8486088DCFD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED0443D216598A8F0057A689 /* FontMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FontMeta.h; path = ../include/FontMeta.h; sourceTree = "<group>"; };
+		FC4D1ADF99CB49D6B2FF146A /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		FD4655139BDA4CC3BC704C8E /* Screenstagram2_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Screenstagram2_Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619864F7161B6D9200936112 /* CoreVideo.framework in Frameworks */,
+				619864F5161B6D8800936112 /* QTKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				07D4D0D6F07F44C3AA35FBE7 /* ScreenSaver.framework in Frameworks */,
+				0FC44C24DF434F4FB112D32F /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000B22B5161F6C670040DD3B /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				000B2284161F645A0040DD3B /* MacConfigDialog.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		000B22B6161F6C780040DD3B /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				000B2264161F64170040DD3B /* MacConfigDialog.mm */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		009DA5D2A2B943589ADDC75A /* cinder */ = {
+			isa = PBXGroup;
+			children = (
+				739BCBB1A0234AA9A7F6BCEE /* app */,
+				11200BF616EE91D6004E2D66 /* UrlImplCocoa.mm */,
+			);
+			name = cinder;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				000B22B6161F6C780040DD3B /* Mac */,
+				000B225B161F64170040DD3B /* Back.cpp */,
+				000B225C161F64170040DD3B /* BarOverlayView.cpp */,
+				000B225F161F64170040DD3B /* ClassicRenderView.cpp */,
+				000B2260161F64170040DD3B /* FlashView.cpp */,
+				000B2261161F64170040DD3B /* InstagramImage.cpp */,
+				000B2262161F64170040DD3B /* InstagramImageManager.cpp */,
+				61A3BAA01656E354000DF50F /* InstagramImageFace.cpp */,
+				000B2263161F64170040DD3B /* LoaderView.cpp */,
+				000B2265161F64170040DD3B /* PhotoFlashRenderView.cpp */,
+				000B2266161F64170040DD3B /* RenderView.cpp */,
+				61A3BAA31656E35D000DF50F /* WindowData.cpp */,
+				000B2267161F64170040DD3B /* SwappableImage.cpp */,
+				000B2268161F64170040DD3B /* TileTakeoverRenderView.cpp */,
+				571C98FF9C2941EFBC235097 /* Screenstagram2App.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Screenstagram 2.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Screenstagram2 */ = {
+			isa = PBXGroup;
+			children = (
+				61E8F5841698C44600D553F2 /* screenstagram.icns */,
+				61E8F5811698C3AE00D553F2 /* screenstagram.iconset */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				AEDDEE0EA0804415B01707A7 /* Cinder */,
+			);
+			name = Screenstagram2;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				ED0443D216598A8F0057A689 /* FontMeta.h */,
+				000B22B5161F6C670040DD3B /* Mac */,
+				000B2279161F645A0040DD3B /* Back.h */,
+				000B227A161F645A0040DD3B /* BarOverlayView.h */,
+				000B227D161F645A0040DD3B /* ClassicRenderView.h */,
+				000B227E161F645A0040DD3B /* Config.h */,
+				000B227F161F645A0040DD3B /* Configuration.h */,
+				000B2280161F645A0040DD3B /* FlashView.h */,
+				000B2281161F645A0040DD3B /* InstagramImage.h */,
+				000B2282161F645A0040DD3B /* InstagramImageManager.h */,
+				61A3BAA61656E376000DF50F /* InstagramImageFace.h */,
+				000B2283161F645A0040DD3B /* LoaderView.h */,
+				61A3BAA51656E36F000DF50F /* WindowData.h */,
+				000B2285161F645A0040DD3B /* PhotoFlashRenderView.h */,
+				000B2286161F645A0040DD3B /* RenderView.h */,
+				000B2287161F645A0040DD3B /* SwappableImage.h */,
+				000B2288161F645A0040DD3B /* TileTakeoverRenderView.h */,
+				FC4D1ADF99CB49D6B2FF146A /* Resources.h */,
+				FD4655139BDA4CC3BC704C8E /* Screenstagram2_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000B2289161F64990040DD3B /* compositeShadowCenter.gif */,
+				000B228A161F64990040DD3B /* compositeShadowHorizontal.gif */,
+				61E8F5861698C82800D553F2 /* thumbnail.png */,
+				61E8F5871698C82800D553F2 /* thumbnail@2x.png */,
+				000B228B161F64990040DD3B /* compositeShadowVertical.gif */,
+				000B228C161F64990040DD3B /* dropshadow.png */,
+				000B228D161F64990040DD3B /* foursquareAvatarMask.png */,
+				000B228E161F64990040DD3B /* foursquareLogo.png */,
+				000B228F161F64990040DD3B /* foursquareLogoShadow.png */,
+				000B2290161F64990040DD3B /* loader.png */,
+				000B2291161F64990040DD3B /* preview.jpg */,
+				000B2292161F64990040DD3B /* screenstagram_bg.png */,
+				000B2293161F64990040DD3B /* screenstagram.png */,
+				01F33D01170236C10057123D /* screenstagram-copy.png */,
+				000B2294161F64990040DD3B /* shadowBackground.png */,
+				000B2295161F64990040DD3B /* shadowCenter.gif */,
+				015732FD1702370D00DD767E /* SettingsSheet.xib */,
+				000B2296161F64990040DD3B /* shadowCenter.png */,
+				000B2297161F64990040DD3B /* shadowHorizontal.gif */,
+				000B2298161F64990040DD3B /* shadowHorizontal.png */,
+				000B2299161F64990040DD3B /* shadowVertical.gif */,
+				000B229A161F64990040DD3B /* shadowVertical.png */,
+				8EC57C9820A8486088DCFD47 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				619864F6161B6D9200936112 /* CoreVideo.framework */,
+				619864F4161B6D8800936112 /* QTKit.framework */,
+				03B91624A8824DECA7F6C91F /* ScreenSaver.framework */,
+				4EAA82C7F82A40899BB9EBC3 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		739BCBB1A0234AA9A7F6BCEE /* app */ = {
+			isa = PBXGroup;
+			children = (
+				11200BF816EE91FA004E2D66 /* AppImplCocoaRendererGl.mm */,
+				11200BF916EE91FA004E2D66 /* AppImplCocoaScreenSaver.mm */,
+				11200BFA16EE91FA004E2D66 /* AppScreenSaver.cpp */,
+				11200BFB16EE91FA004E2D66 /* CinderView.mm */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		AEDDEE0EA0804415B01707A7 /* Cinder */ = {
+			isa = PBXGroup;
+			children = (
+				FE933C26FF1440AEB4BDD5F7 /* src */,
+			);
+			name = Cinder;
+			sourceTree = "<group>";
+		};
+		FE933C26FF1440AEB4BDD5F7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				009DA5D2A2B943589ADDC75A /* cinder */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Screenstagram2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Screenstagram2" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				610A52441622198900683C60 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Screenstagram2;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Screenstagram2;
+			productReference = 8D1107320486CEB800E47090 /* Screenstagram 2.saver */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Screenstagram2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Screenstagram2 */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Screenstagram2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000B229B161F64990040DD3B /* compositeShadowCenter.gif in Resources */,
+				000B229C161F64990040DD3B /* compositeShadowHorizontal.gif in Resources */,
+				000B229D161F64990040DD3B /* compositeShadowVertical.gif in Resources */,
+				000B229E161F64990040DD3B /* dropshadow.png in Resources */,
+				000B229F161F64990040DD3B /* foursquareAvatarMask.png in Resources */,
+				000B22A0161F64990040DD3B /* foursquareLogo.png in Resources */,
+				000B22A1161F64990040DD3B /* foursquareLogoShadow.png in Resources */,
+				000B22A2161F64990040DD3B /* loader.png in Resources */,
+				000B22A3161F64990040DD3B /* preview.jpg in Resources */,
+				000B22A4161F64990040DD3B /* screenstagram_bg.png in Resources */,
+				000B22A5161F64990040DD3B /* screenstagram.png in Resources */,
+				000B22A6161F64990040DD3B /* shadowBackground.png in Resources */,
+				000B22A7161F64990040DD3B /* shadowCenter.gif in Resources */,
+				000B22A8161F64990040DD3B /* shadowCenter.png in Resources */,
+				000B22A9161F64990040DD3B /* shadowHorizontal.gif in Resources */,
+				000B22AA161F64990040DD3B /* shadowHorizontal.png in Resources */,
+				000B22AB161F64990040DD3B /* shadowVertical.gif in Resources */,
+				000B22AC161F64990040DD3B /* shadowVertical.png in Resources */,
+				61E8F5821698C3AE00D553F2 /* screenstagram.iconset in Resources */,
+				61E8F5851698C44600D553F2 /* screenstagram.icns in Resources */,
+				61E8F5881698C82800D553F2 /* thumbnail.png in Resources */,
+				61E8F5891698C82800D553F2 /* thumbnail@2x.png in Resources */,
+				01F33D02170236C10057123D /* screenstagram-copy.png in Resources */,
+				015732FE1702370D00DD767E /* SettingsSheet.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1023CF418FB4770BBD1DECA /* Screenstagram2App.cpp in Sources */,
+				000B226A161F64170040DD3B /* Back.cpp in Sources */,
+				000B226B161F64170040DD3B /* BarOverlayView.cpp in Sources */,
+				000B226E161F64170040DD3B /* ClassicRenderView.cpp in Sources */,
+				000B226F161F64170040DD3B /* FlashView.cpp in Sources */,
+				000B2270161F64170040DD3B /* InstagramImage.cpp in Sources */,
+				000B2271161F64170040DD3B /* InstagramImageManager.cpp in Sources */,
+				000B2272161F64170040DD3B /* LoaderView.cpp in Sources */,
+				000B2273161F64170040DD3B /* MacConfigDialog.mm in Sources */,
+				000B2274161F64170040DD3B /* PhotoFlashRenderView.cpp in Sources */,
+				000B2275161F64170040DD3B /* RenderView.cpp in Sources */,
+				000B2276161F64170040DD3B /* SwappableImage.cpp in Sources */,
+				000B2277161F64170040DD3B /* TileTakeoverRenderView.cpp in Sources */,
+				61A3BAA11656E354000DF50F /* InstagramImageFace.cpp in Sources */,
+				61A3BAA41656E35D000DF50F /* WindowData.cpp in Sources */,
+				11200BF716EE91D6004E2D66 /* UrlImplCocoa.mm in Sources */,
+				11200BFC16EE91FA004E2D66 /* AppImplCocoaRendererGl.mm in Sources */,
+				11200BFD16EE91FA004E2D66 /* AppImplCocoaScreenSaver.mm in Sources */,
+				11200BFE16EE91FA004E2D66 /* AppScreenSaver.cpp in Sources */,
+				11200BFF16EE91FA004E2D66 /* CinderView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Screenstagram2_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = "Screenstagram 2";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SYMROOT = ./build;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXPORTED_SYMBOLS_FILE = exported_symbols.txt;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Screenstagram2_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = "Screenstagram 2";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = ./build;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CINDER_PATH = ../cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CINDER_PATH = ../cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Screenstagram2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Screenstagram2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

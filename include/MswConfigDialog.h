@@ -1,0 +1,67 @@
+#ifndef MSWCONFIGDIALOG_H
+#define MSWCONFIGDIALOG_H
+
+#include "Configuration.h"
+
+#include <Windows.h>
+
+#ifndef IDC_STATIC
+#define IDC_STATIC (-1)
+#endif
+
+// 201-250, inclusive:
+
+#define IDC_CURRENTVERSION						201
+#define IDC_USERNAME							202
+#define IDC_PASSWORD							203
+#define IDC_LOGIN								204
+#define IDC_COPYRIGHT							205
+#define IDC_URL									206
+#define IDC_DEAUTHENTICATE						207
+#define IDC_ONLYSHOWLIKED						208
+#define IDC_DEFAULTBEHAVIOR						209
+#define IDC_ONLYINCLUDETAGGED					210
+#define IDC_SHOWUSERNAMES						211
+
+#define IDC_TAGS								213
+//#define IDC_FOURSQLOGO						214
+#define IDC_LOGO								215
+#define IDC_CHECKFORUPDATE						216
+#define IDC_INCLUDETAGGEDINFO					217
+#define IDC_USERNAMEINFO						218
+#define IDC_PASSWORDINFO						219
+#define IDC_DEAUTHENTICATEINFO					220
+#define IDC_INSTADISCLAIMER						221
+//#define IDC_FOURSQVENUE						222
+//#define IDC_SAMPLEVENUE						223 // FOURSQ
+
+//#define IDD_FOURSQCONFIGURE					224
+//#define RES_FOURSQ_PNG						225
+//#define IDC_FOURSQDIALOGTXT					226
+
+//#define IDS_FOURSQDIALOGTXT					232
+//#define IDS_FOURSQIDD_OKSTATE					233
+//#define IDS_FOURSQIDD_CLEARSTATE				234
+#define IDS_INSTAUTHREMOVE_CAPTION				235
+#define IDS_INSTAUTHREMOVE_MESSAGE				236
+#define IDS_INSTAUTHGOOD_CAPTION				237
+#define IDS_INSTAUTHGOOD_MESSAGE				238
+#define IDS_REQUESTFAIL_CAPTION					239
+#define IDS_REQUESTFAIL_MESSAGE					240
+#define IDS_INSTAUTHFAIL_CAPTION				241
+#define IDS_INSTAUTHFAIL_DEFAULT				242
+#define IDS_UPDATECHECKFAIL_CAPTION				243
+#define IDS_UPDATECHECKFAIL_MESSAGE				244
+#define IDS_UPDATECHECKVERSION					245
+#define IDS_UPDATECHECKDEFAULT					246
+#define IDS_UPDATECHECKACTION					247
+#define IDS_UPDATEAVAILABLE						248
+#define IDS_UPDATEUNNECESSARY					249
+
+#define RES_LOGO_PNG							250
+
+BOOL getConfigDialogMsw( HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam );
+void loadConfigMsw( Configuration *config );
+
+#endif
+
